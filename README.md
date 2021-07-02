@@ -9,7 +9,6 @@ can be configured and reused easily, it's interactive and of course pretty.
 - Implement a custom HTML element: Profile card -> &lt;profile-card> &lt;/profile-card>
     - Use Vanilla JS, CSS and HTML for your component
     - Add tests for the element, you can use selenium or follow a more challenging approach doing unit tests for it.
-    - You can also get rid of NodeJS on your branch and start from scratch using only the plain technologies
     - What if you wanted it to preserve its own styling among websites?
 
 ## Recommendations & tips   
