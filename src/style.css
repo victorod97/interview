@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/RobotoMono-Regular.ttf');
+  font-style: normal;
+}
+
+body {
+    font-family: 'MyFont', system-ui, serif;
+    margin: 0px;
+}
+
+#app-root {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(150px, 20%) 1fr;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,45 @@
+
+#lsidebar {
+  height: 100vh;
+  
+  border-right: dashed #404040 2px;
+}
+
+.project {
+    width: 330px;
+    height: 360px;
+    border: solid 1px #404040;
+    border-radius: 4px;
+    margin: 15px;
+}
+
+.image {
+    height: 60%;
+}
+
+.image > img {
+    height: 98%;
+    width: 98%;
+    padding: 4px;
+}
+
+.description {
+    padding: 4%;
+}
+
+.description-content {
+    border-top: solid 1px #404040;
+    padding-top: 4%;
+}
+
+#main-content {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;   
+}
+
+#content {
+    height: inherit;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
