@@ -1,7 +1,8 @@
 
 #lsidebar {
-  height: 100vh;
-  
+  height: 97vh;
+  padding: 2%;
+  overflow: auto;
   border-right: dashed #404040 2px;
 }
 

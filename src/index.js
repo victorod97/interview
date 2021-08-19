@@ -1,6 +1,7 @@
 import app from './app/app.html';
 import { AppInit } from './app/app';
 import './style.css';
+import '@mdi/font/css/materialdesignicons.css'
 
 
 (function () {

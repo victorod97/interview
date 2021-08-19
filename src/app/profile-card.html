@@ -1,0 +1,129 @@
+<style>
+    .profile-container {
+        min-width: 150px;
+        border: solid 1px #404040;
+        border-radius: 4px;
+        max-width: 360px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* #profile-img {} */
+
+    #profile-desc {
+        /* text-align: center; */
+        font-size: 12px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    #profile-img ::slotted(img) {
+        height: 100%;
+        width: 100%;
+    }
+
+    #profile-info ::slotted(a) {
+        cursor: pointer;
+        color: #404040;
+        text-decoration: none;
+    }
+
+    #profile-info ::slotted(a:hover) {
+        color: rgba(14, 14, 253, 0.891);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    #profile-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profile-info .row-info {
+        display: flex;
+    }
+
+    #profile-info .row-info .icon-info {
+        flex: 1;
+        /* text-align: center; */
+        font-size: 24px;
+    }
+
+    #profile-info .row-info .info {
+        flex: 7;
+        padding-top: 5px;
+        text-align: left;
+    }
+
+    #social-media {
+        font-size: 30px;
+        margin: 15px;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: rgba(14, 14, 253, 0.891);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    #profile-tools {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3%;
+        justify-content: center;
+    }
+
+    #profile-tools span {
+        margin: 1px;
+        background-color: grey;
+        color: #ffffff;
+        padding: 4px;
+        border-radius: 2px;
+    }
+
+    #profile-hobbies {
+        text-align: left;
+    }
+
+</style>
+
+<div class="profile-container">
+    <div id="profile-img">
+        <slot name="avatar"></slot>
+    </div>
+    <div id="profile-desc">
+        <slot name="description"></slot>
+    </div>
+    <div id="profile-info">
+       <div class="row-info">
+            <div class="icon-info">Ξ</div>
+            <div class="info"><slot name="name"></slot></div>
+       </div>
+       <div class="row-info">
+           <div class="icon-info">@</div>
+           <div class="info"><slot name="email"></slot></div>
+       </div>
+       <div class="row-info">
+           <div class="icon-info">#</div>
+           <div class="info"><slot name="phone"></slot></div>
+       </div>
+        <div id="social-media">
+            <slot name="github"></slot>
+            <slot name="face"></slot>
+            <slot name="twitter"></slot>
+        </div>
+    </div>
+    <div id="more-content" hidden="true">
+        <div id="profile-tools"></div>
+        <div id="profile-hobbies">
+            <ul>
+                <li>test</li>
+            </ul>
+        </div>
+    </div>
+    <a id="show-more">More...</a>
+</div>
